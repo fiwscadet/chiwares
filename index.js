@@ -75,7 +75,7 @@ console.log('-----ปริ้นทั้งหมด-----' + JSON.stringify(da
 function data_enter(sende_r, beacon_id) {
 
 
-   var checktime = "https://script.google.com/macros/s/AKfycby9wyHt1B1-sHtM5Y3MDezGGhicLOCIpgZ-nB5a/exec?userId="+sende_r+"&beaconid="+beacon_id;
+   var checktime = "https://script.google.com/macros/s/AKfycbxel4S6erJ4Nwps7fgfg7TYCBh9lDZRprxXs_6M/exec?userId="+sende_r+"&beaconid="+beacon_id;
  request(checktime, function (error, response, body) {
 
 })
@@ -108,19 +108,19 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "014fe78143"){
+          if(beacon_id == "014fed3723"){
          var msg = {
            "type": "text",
-           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจสำนักงานขายของคุณไว้แล้ว"
+           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจสำนักงานนิติบุคคลของคุณไว้แล้ว"
           
                    
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
-         }else if(beacon_id == "01489fbe64"){
+         }else if(beacon_id == "014fed7ccb"){
          var msg = {
            "type": "text",
-           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจของคุณไว้แล้ว"
+           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจจุดตรวจท้ายโครงการหมู่บ้านของคุณไว้แล้ว"
           }; 
         reply(reToken, msg, sende_r, beacon_id);   
          }
