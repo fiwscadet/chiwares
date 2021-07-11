@@ -75,7 +75,7 @@ console.log('-----ปริ้นทั้งหมด-----' + JSON.stringify(da
 function data_enter(sende_r, beacon_id) {
 
 
-   var checktime = "https://script.google.com/macros/s/AKfycbygktL_JBc6vC2PJpP09KsbzglZ_Tpd9FINDSxF/exec?userId="+sende_r+"&beaconid="+beacon_id;
+   var checktime = "https://script.google.com/macros/s/AKfycby9wyHt1B1-sHtM5Y3MDezGGhicLOCIpgZ-nB5a/exec?userId="+sende_r+"&beaconid="+beacon_id;
  request(checktime, function (error, response, body) {
 
 })
@@ -108,10 +108,10 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "01489f0f1c"){
+          if(beacon_id == "014fe78143"){
          var msg = {
            "type": "text",
-           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจของคุณไว้แล้ว"
+           "text": "สวัสดีคุณ"+" " +name +" " + "ขณะนี้ระบบได้บันทึกข้อมูลการตรวจสำนักงานขายของคุณไว้แล้ว"
           
                    
 
